@@ -182,7 +182,7 @@ class Orders {
       quantity,
       order_type: 'buy_quantity',
       order_sub_type: 'limit',
-      time_in_force: 'day',
+      time_in_force: 'until_cancel',
       account_id: accountId,
     });
   }
@@ -211,7 +211,7 @@ class Orders {
       quantity,
       order_type: 'buy_quantity',
       order_sub_type: 'stop_limit',
-      time_in_force: 'day',
+      time_in_force: 'until_cancel',
       account_id: accountId,
     });
   }
@@ -252,7 +252,7 @@ class Orders {
       quantity,
       order_type: 'sell_quantity',
       order_sub_type: 'limit',
-      time_in_force: 'day',
+      time_in_force: 'until_cancel',
       account_id: accountId,
     });
   }
@@ -281,7 +281,7 @@ class Orders {
       quantity,
       order_type: 'sell_quantity',
       order_sub_type: 'stop_limit',
-      time_in_force: 'day',
+      time_in_force: 'until_cancel',
       account_id: accountId,
     });
   }
